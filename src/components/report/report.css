@@ -1,0 +1,18 @@
+.report-pdf-choose{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: aqua;
+}
+
+.btn-report-pdf{
+    width: 200px;
+}
+
+.report-pdf-choose-mode{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}

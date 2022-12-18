@@ -1,0 +1,97 @@
+.signin-wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.image-signin{
+    border-radius :50% ;
+    width: 150px;
+    background-color: aqua;
+}
+
+.signin-wrapper-image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin-wrapper-image>h2{
+color: aqua;
+font-size: 30px;
+}
+.form-signin-wrapper{
+    display: flex;
+    align-items: center;
+ 
+}
+.form-signin-wrapper>form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-signin{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    
+}
+
+.form-signin > input{
+    border: 1px solid aqua;
+    border-radius: 8px;
+    padding: 5px;
+    width: 250px;
+    color: aqua;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+label{
+    color: aqua;
+}
+
+button{
+    background-color: aqua;
+    padding: 5px;
+    border-radius: 8px;
+    border: 2px solid black;
+    color: black;
+    width: 80px;
+}
+
+button:hover{
+    background-color: black;
+    border-radius: 10px;
+    border: 2px solid aqua;
+    color: aqua;
+
+}
+
+.submitbutton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.login-here{
+    color: aqua;
+    font-size: 15px;
+    display: flex; 
+    gap: 10px;
+}
+
+.login-here>a{
+    color: aqua;
+    text-decoration: none;
+}

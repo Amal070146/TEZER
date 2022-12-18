@@ -1,0 +1,217 @@
+.header-logo {
+  font-weight: 900;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#tridiv {
+  perspective: 800px;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  font-size: 100%;
+}
+.scene,
+.shape,
+.face,
+.face-wrapper,
+.cr {
+  position: absolute;
+  transform-style: preserve-3d;
+}
+.scene {
+  width: 80em;
+  height: 80em;
+  top: 50%;
+  left: 50%;
+  margin: -40em 0 0 -40em;
+  -webkit-animation: rotate 5s infinite; /* Safari 4+ */
+  -moz-animation: rotate 5s infinite; /* Fx 5+ */
+  -o-animation: rotate 5s infinite; /* Opera 12+ */
+  animation: rotate 5s infinite; /* IE 10+ */
+}
+.shape {
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform-origin: 50%;
+  background: #ededeb;
+}
+.face,
+.face-wrapper {
+  overflow: hidden;
+  transform-origin: 0 0;
+  backface-visibility: hidden;
+  /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+  box-shadow: inset -2px -2px 2px 3px #6ac0dc;
+}
+.face {
+  background-size: 100% 100% !important;
+  background-position: center;
+  background-color: #fafafa;
+}
+.face-wrapper .face {
+  left: 100%;
+  width: 100%;
+  height: 100%;
+}
+.photon-shader {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  font-weight: 600;
+}
+.side {
+  left: 50%;
+}
+.cr,
+.cr .side {
+  height: 100%;
+}
+[class*="cuboid"] .ft,
+[class*="cuboid"] .bk {
+  width: 100%;
+  height: 100%;
+}
+[class*="cuboid"] .bk {
+  left: 100%;
+}
+[class*="cuboid"] .rt {
+  transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+  transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+  transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+  transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+  left: 100%;
+}
+[class*="cuboid"] .bm {
+  top: 100%;
+}
+/* .cub-1 styles */
+.cub-1 {
+  transform: translate3D(0em, 0em, 0em) rotateX(0deg) rotateY(360deg)
+    rotateZ(0deg);
+  opacity: 1;
+  width: 19.18em;
+  height: 5em;
+  margin: -2.5em 0 0 -9.59em;
+  background-color: #5692a5;
+}
+.cub-1 .ft {
+  transform: translateZ(2.5em);
+}
+.cub-1 .bk {
+  transform: translateZ(-2.5em) rotateY(180deg);
+}
+.cub-1 .rt,
+.cub-1 .lt {
+  width: 5em;
+  height: 5em;
+}
+.cub-1 .tp,
+.cub-1 .bm {
+  width: 19.18em;
+  height: 5em;
+}
+.cub-1 .face {
+  background-color: #ffffff;
+}
+.cub-1 .ft {
+  background: url(http://projects.bearddesign.co/burrp/front-main.svg);
+}
+.cub-1 .bk {
+  background: url(http://projects.bearddesign.co/burrp/back.svg);
+}
+.cub-1 .tp {
+  background: url(http://projects.bearddesign.co/burrp/top.svg);
+}
+.cub-1 .bm {
+  background: url(http://projects.bearddesign.co/burrp/front-main.svg);
+}
+.cub-1 .lt {
+  background: url(http://projects.bearddesign.co/burrp/side-drink.svg);
+}
+.cub-1 .rt {
+  background: url(http://projects.bearddesign.co/burrp/side-food.svg);
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+  15% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(0deg) rotateY(-300deg) rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateX(0deg) rotateY(-270deg) rotateZ(0deg);
+  }
+  45% {
+    -webkit-transform: rotateX(0deg) rotateY(-270deg) rotateZ(0deg);
+  }
+  60% {
+    -webkit-transform: rotateX(300deg) rotateY(-200deg) rotateZ(0deg);
+  }
+  65% {
+    -webkit-transform: rotateX(270deg) rotateY(-180deg) rotateZ(0deg);
+  }
+  90% {
+    -webkit-transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  15% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25% {
+    -webkit-transform: rotateX(0deg) rotateY(-300deg) rotateZ(0deg);
+  }
+  30% {
+    -webkit-transform: rotateX(0deg) rotateY(-270deg) rotateZ(0deg);
+  }
+  45% {
+    -webkit-transform: rotateX(0deg) rotateY(-270deg) rotateZ(0deg);
+  }
+  60% {
+    -webkit-transform: rotateX(300deg) rotateY(-200deg) rotateZ(0deg);
+  }
+  65% {
+    -webkit-transform: rotateX(270deg) rotateY(-180deg) rotateZ(0deg);
+  }
+  90% {
+    -webkit-transform: rotateX(10deg) rotateY(10deg) rotateZ(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg);
+  }
+}

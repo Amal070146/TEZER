@@ -1,0 +1,51 @@
+.profile-wrapper>div{
+   color: aqua;
+   padding:0 80px  ;
+}
+
+.profile-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;
+}
+
+.header-text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile-image-wrapper{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-image-wrapper>.one{
+border-radius: 50%;
+width: 250px;
+}
+
+.option-lab-med{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.option-lab-med-t{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.option-lab-med-t>h3{
+    width: fit-content;
+}
+
+.option-lab-med-t>img{
+    background-color: aqua;
+    padding: 8px;
+    border-radius: 8px;
+}
